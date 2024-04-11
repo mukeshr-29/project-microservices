@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                        sh "docker build -t mukeshr29/loadgenerator:latest ."
+                        sh "docker build -t mukeshr29/loadgenerator1:latest ."
                     }
                 }
             }
@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
-                        sh "docker push mukeshr29/loadgenerator:latest "
+                        sh "docker push mukeshr29/loadgenerator1:latest "
                     }
                 }
             }
